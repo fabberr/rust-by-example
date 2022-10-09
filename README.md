@@ -4,11 +4,10 @@ Rust tutorials and exercises from [Rust By Example](https://doc.rust-lang.org/st
 
 ### Using the toolchain
 
-For the purposes of this tutorial, the Cargo (Rust package manager and build tools) packages will be initialized with no source control, under the `src/` directory, sorted by their order of appearence in RBE with the following command:
+For the purposes of this tutorial, each example will be its own Cargo (Rust package manager and build tools) package. All packages will be initialized with no source control, under the `src/` directory, sorted by the order of appearence of their corresponding examples in RBE with the following command:
 
 ```cargo new --vcs none --name <pkg-name> src/<pkg-index>_<pkg-name>```
 
-Or, aternatively, by executing included bash script `./cargo_new.sh <pkg-name>`. If cloning from remote, use `chmod` to set appropriate permissions first (e.g. `777` - rwx for root, usr and group).
+Or, aternatively, by executing the provided script: `./cargo_new.sh <pkg-name>`. Note: You may have to use `chmod` to set the appropriate permissions (e.g. `777` - rwx for root, usr and group) for the script before its first use.
 
-
-Navigate to the newly created directory to build and run the project using `cargo build`, `cargo run` and `cargo clean` utilities.
+Navigate to the individual package directories to use the `cargo build`, `cargo run` and `cargo clean` utilities.
