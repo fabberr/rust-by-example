@@ -4,7 +4,7 @@ Rust tutorials and exercises from [Rust By Example](https://doc.rust-lang.org/st
 
 ### Using the toolchain
 
-For the purposes of this tutorial, each example will be its own Cargo (Rust package manager and build tools) package. All packages will be initialized with no source control, under the `src/` directory, sorted by the order of appearence of their corresponding examples in RBE with the following command:
+For the purposes of this tutorial, each example will be made its own Cargo (Rust package manager and build tools) package. All packages will be initialized with no source control, under the `src/` directory, sorted by the order of appearence of their corresponding examples in RBE with the following command:
 
 ```cargo new --vcs none --name <pkg-name> src/<pkg-index>_<pkg-name>```
 
