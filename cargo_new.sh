@@ -15,7 +15,7 @@ if ! [ "$1" ]; then
 fi
 pkg_name=$1
 
-# Count subdirectories of `src/` and pad the output string with 0s to have a width o two.
+# Count subdirectories of `src/` and pad the output string with 0s to have a width of two.
 n_dirs=`printf %02d $(find 'src/' -mindepth 1 -maxdepth 1 -type d | wc -l)`
 
 # Create new Cargo package
