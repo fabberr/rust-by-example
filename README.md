@@ -8,6 +8,6 @@ For the purposes of this tutorial, each example will be made into its own Cargo 
 
 ```cargo new --vcs none --name <pkg-name> src/<pkg-index>_<pkg-name>```
 
-Or, aternatively, by executing the provided script: `./cargo_new.sh <pkg-name>`. Note: You may have to use `chmod` to set the appropriate permissions (e.g. `777` - rwx for root, usr and group) for the script before its first use.
+Or, aternatively, by executing the provided script: `./cargo_new.sh <pkg-name>`. Note: You may have to set the appropriate permissions for the script before its first use (e.g. `chmod 777 cargo_new.sh` - rwx for root, usr and group under Unix-compliant systems).
 
 Navigate to the individual package directories to use the `cargo build`, `cargo run` and `cargo clean` utilities.
